@@ -1,0 +1,51 @@
+img {
+	z-index: 0;
+}
+
+body {
+	background-color: #121212;
+	color: white;
+	font-family: Roboto, Verdana, Tahoma, Geneva, sans-serif;
+}
+
+a:link {
+	color: white;
+}
+
+.redesIcons>img {
+	filter: invert(100%);
+}
+
+.nav-link:active,
+.nav-link:focus,
+.navbar-brand:focus {
+	color: #0a74db;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+	color: #4d4d4d;
+}
+
+
+.text-center>.row {
+	text-align: center;
+}
+
+.circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: white;
+	display: inline-block;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	opacity: 0.4;
+}
