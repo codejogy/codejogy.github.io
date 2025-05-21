@@ -27,6 +27,11 @@ a:link {
 	color: #4d4d4d;
 }
 
+.nav-link:visited,
+.navbar-brand:visited {
+	color: #404040;
+}
+
 
 .text-center>.row {
 	text-align: center;
