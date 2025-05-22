@@ -1,10 +1,14 @@
+/*Paleta de colores {*/
+/*	#1a1f1e (negro) #6cbdb5 (azul verde) #93ccc6 (azul más azul) #c8d6bf (khaki blanco) #e3dfba (khaki)*/
+/*}*/
+
 img {
 	z-index: 0;
 }
 
 body {
 	background-color: #121212;
-	color: white;
+	color: #c8d6bf;
 	font-family: Roboto, Verdana, Tahoma, Geneva, sans-serif;
 }
 
@@ -12,8 +16,20 @@ a:link {
 	color: white;
 }
 
-.redesIcons>img {
+.redesIcons>a {
+	animation-name: inverting;
+	animation-duration: 3s;
 	filter: invert(100%);
+}
+
+@keyframes inverting {
+	from {
+		filter: invert(0%)
+	}
+
+	to {
+		filter: invert(100%)
+	}
 }
 
 .nav-link:active,
@@ -29,7 +45,58 @@ a:link {
 
 .nav-link:visited,
 .navbar-brand:visited {
-	color: #404040;
+	color: white;
+}
+
+.nav-link:visited,
+.navbar-brand:visited,
+.nav-link,
+.navbar-brand {
+	background-color: transparent;
+	animation: changeColorText auto linear;
+	animation-timeline: scroll();
+}
+
+@keyframes changeColorText {
+	from {
+		color: white;
+	}
+
+	to {
+		/*color: #A7564C;*/
+	}
+}
+
+.navbar {
+	animation-name: changeBackgroundNav;
+	animation-duration: auto;
+	animation-timing-function: linear;
+	animation-timeline: scroll();
+}
+
+@keyframes changeBackgroundNav {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: #4C9DA7;
+	}
+}
+
+
+.slide1 {
+	min-height: 100vh;
+}
+
+.slide2 {
+	min-height: 40vh;
+}
+
+.slide3 {
+	min-height: calc(40vh + 10vh);
+	padding-bottom: 60px;
+	background-color: white;
 }
 
 
@@ -37,13 +104,148 @@ a:link {
 	text-align: center;
 }
 
-.circle {
-	width: 150px;
-	height: 150px;
+.circleIcon {
+	width: 190px;
 	border-radius: 50%;
-	background-color: white;
+	/*background-color: white;*/
 	display: inline-block;
+	margin-top: 5px;
 }
+
+.circleParent:hover {
+	animation-name: changeColor;
+	animation-duration: 2s;
+	background-color: #121212;
+}
+
+@keyframes changeColor {
+	from {
+		background-color: white;
+	}
+
+	to {
+		background-color: #121212;
+	}
+}
+
+.circleParent {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: transparent;
+	animation-name: startingCircle;
+	animation-duration: 2s;
+	background-color: white;
+}
+
+@keyframes startingCircle {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: white;
+	}
+}
+
+
+.timeline {
+	position: relative;
+	/*margin: 20px auto;*/
+}
+
+.timeline::after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 6px;
+	top: 0;
+	background-color: #1a1f1e;
+	z-index: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.containerTimeline {
+	position: relative;
+	width: 50%;
+	padding: 10px 50px;
+	/*top: 50px;*/
+	/*margin-right: auto;*/
+	/*left: 50px;*/
+	/*margin-left: 10px;*/
+	/*margin-right: 10px;*/
+}
+
+.containerTimeline span.circleLeft {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	top: 40px;
+	left: -13px;
+	z-index: 2;
+	background-color: #bbb;
+	border-radius: 50%;
+
+}
+
+.containerTimeline span.circleRight {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	top: 40px;
+	right: -13px;
+	z-index: 2;
+	background-color: #93ccc6;
+	border-radius: 50%;
+
+}
+
+.timelineHeadline {
+	text-align: center;
+	font-size: 5em;
+	color: black;
+}
+
+.rightTimeline {
+	margin-left: auto;
+}
+
+.textboxTimeline {
+	padding: 20px 30px;
+	background-color: #e3dfba;
+	box-shadow: 5px 10px #888888;
+	position: relative;
+	border-radius: 6px;
+	font-size: 15px;
+	color: black;
+}
+
+.rightarrow {
+	height: 0px;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #e3dfba;
+	right: -13px;
+}
+
+.leftarrow {
+	height: 0px;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #e3dfba;
+	left: -13px;
+}
+
 
 #myVideo {
 	position: fixed;
