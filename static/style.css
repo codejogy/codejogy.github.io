@@ -339,3 +339,9 @@ a:link {
 }
 	
 }
+
+.col-9.col-md.me-md-5.ms-5.ms-md-0 {
+
+/* Buscando la clase con ctrl+f podría ayudar */
+	margin-top: 3rem;
+}
