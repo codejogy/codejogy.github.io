@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Home | José Hernández</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link href="static/style.css" rel="stylesheet">
@@ -20,45 +20,20 @@
         </video>
     </div>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-semibold fs-4" href="index.html">José Hernández</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand fw-semibold fs-4" href="#">José Hernández</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
-                    <li class="nav-item me-4 fw-semibold">
-                        <a class="nav-link" aria-current="page"
-                            href="static/cv/CV Jose de Jesus Hernandez Ibarra 19-05-25.pdf">CV</a>
-                    </li>
-                    <!--    <a class="nav-link" href="#">Link</a>-->
-                    <!--<li class="nav-item">-->
-                    <!--</li>-->
-                    <!--<li class="nav-item dropdown">-->
-                    <!--    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"-->
-                    <!--        aria-expanded="false">-->
-                    <!--        Dropdown-->
-                    <!--    </a>-->
-                    <!--    <ul class="dropdown-menu">-->
-                    <!--        <li><a class="dropdown-item" href="#">Action</a></li>-->
-                    <!--        <li><a class="dropdown-item" href="#">Another action</a></li>-->
-                    <!--        <li>-->
-                    <!--            <hr class="dropdown-divider">-->
-                    <!--        </li>-->
-                    <!--        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                    <!--    </ul>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
-                    <!--</li>-->
-                </ul>
-                <!--<form class="d-flex" role="search">-->
-                <!--    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />-->
-                <!--    <button class="btn btn-outline-success" type="submit">Search</button>-->
-                <!--</form>-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link me-4 fw-semibold" href="sabermas.html">Saber más</a>
+                    <a class="nav-link me-4 fw-semibold"
+                        href="static/cv/CV Jose de Jesus Hernandez Ibarra 19-05-25.pdf">CV</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -116,10 +91,10 @@
         <div class="timelineHeadline">
             Timeline
         </div>
-        <div class="timeline">
+        <div class=" container-fluid timeline">
             <div class="container ">
                 <div class="row">
-                    <div class="containerTimeline ">
+                    <div class="col-9 col-md me-md-5 ms-5 ms-md-0">
                         <div class="textboxTimeline">
                             <h2>Creación de CV Online</h2>
                             <small>21/05/25</small>
@@ -130,22 +105,44 @@
                                 avances en
                                 aspectos de mi vida para compartirlo.</p>
                             <span class="rightarrow"></span>
+                            <span class="circleRight"></span>
                         </div>
-                        <span class="circleRight"></span>
+                    </div>
+
+                    <div class="col-0 col-md">
+                        <!--<div class="textboxTimeline me-2">-->
+                        <!--    <h2>Creación de CV Online</h2>-->
+                        <!--    <small>21/05/25</small>-->
+                        <!--    <p class="mt-4">Ya llevaba tiempo deseando generar una página web donde yo pusiera lo que-->
+                        <!--        deseara y-->
+                        <!--        complicarmela-->
+                        <!--        lo que yo deseara. De ahora en adelante esta página será el lugar donde ponga mis-->
+                        <!--        avances en-->
+                        <!--        aspectos de mi vida para compartirlo.</p>-->
+                        <!--    <span class="rightarrow"></span>-->
+                        <!--</div>-->
+
                     </div>
                 </div>
             </div>
             <div class="container ">
-                <div class="containerTimeline  rightTimeline">
-                    <div class="textboxTimeline">
-                        <h2>Desarrollo de computadora de vuelo.</h2>
-                        <small>Junio 2024 - Actualidad</small>
-                        <p>Como parte de mi Servicio Social en el Instituto Politécnico Nacional, comencé el diseño de
-                            una computadora de vuelo y aviónica adaptable a diversas aeronaves y drones experimentales.
-                            También implementé programación en Python y C para una interfaz CLI.</p>
-                        <span class="leftarrow"></span>
+                <div class="row">
+                    <div class="col-0 col-md mt-5">
+
                     </div>
-                    <span class="circleLeft"></span>
+                    <div class="col-9 col-md ms-5">
+                        <div class="textboxTimeline">
+                            <h2>Desarrollo de computadora de vuelo.</h2>
+                            <small>Junio 2024 - Actualidad</small>
+                            <p>Como parte de mi Servicio Social en el Instituto Politécnico Nacional, comencé el diseño
+                                de
+                                una computadora de vuelo y aviónica adaptable a diversas aeronaves y drones
+                                experimentales.
+                                También implementé programación en Python y C para una interfaz CLI.</p>
+                            <span class="leftarrow"></span>
+                            <span class="circleLeft"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
