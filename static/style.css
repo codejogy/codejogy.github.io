@@ -16,6 +16,11 @@ a:link {
 	color: black;
 }
 
+.redesIcons {
+	margin-top: 5.5rem;
+}
+
+
 .redesIcons>a {
 	animation-name: inverting;
 	animation-duration: 3s;
@@ -302,46 +307,94 @@ a:link {
 	z-index: -1;
 	opacity: 0.4;
 }
+
 /* Slide3 de 0px a 768px */
-@media (max-width:768px){
-	.textboxTimeline{
-		 /* display:none; */
+@media (max-width:768px) {
+	.textboxTimeline {
+		/* display:none; */
 		/* Temporal para visualizar mejor */
 	}
+
 	.timeline::after {
-	position: absolute;
-	content: '';
-	height: 100%;
-	width: 6px;
-	top: 0;
-	background-color: #1a1f1e;
-	z-index: 0;
-	left: 10%;
-	margin-left: -3px;
-}
-	.circleRight,.circleLeft {
-	/* display:none; */
-	
-	left: 0;
-	
-}
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 6px;
+		top: 0;
+		background-color: #1a1f1e;
+		z-index: 0;
+		left: 10%;
+		margin-left: -3px;
+	}
+
+	.circleRight,
+	.circleLeft {
+		/* display:none; */
+
+		left: 0;
+
+	}
+
 	.rightarrow {
-	height: 0px;
-	width: 0;
-	position: absolute;
-	top: 28px;
-	z-index: 1;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-	border-right: 15px solid #e3dfba;
-	border-left:0;
-	left: -13px;
-}
-	
+		height: 0px;
+		width: 0;
+		position: absolute;
+		top: 28px;
+		z-index: 1;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-right: 15px solid #e3dfba;
+		border-left: 0;
+		left: -13px;
+	}
+
 }
 
 .col-9.col-md.me-md-5.ms-5.ms-md-0 {
 
-/* Buscando la clase con ctrl+f podría ayudar */
+	/* Buscando la clase con ctrl+f podría ayudar */
 	margin-top: 3rem;
+}
+
+.navbarButtom {
+	overflow: hidden;
+	/*background-color: #333;*/
+	position: sticky;
+	bottom: 10px;
+	width: 100%;
+	margin-left: auto;
+	text-align: center;
+	padding: 20px;
+
+}
+
+.navbarButtom a {
+	/*float: left;*/
+	/*display: block;*/
+	color: #c8d6bf;
+	border: 3px inset #c8d6bf;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+@media(max-width:580px) {
+
+	.navbarButtom a {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.redesIcons {
+		margin-top: 5.5rem;
+	}
+
+}
+
+.navbarButtom a:hover {
+	background: #f1f1f1;
+	color: black;
 }
