@@ -85,6 +85,7 @@ a:link {
 	animation-duration: auto;
 	animation-timing-function: linear;
 	animation-timeline: scroll();
+	/* background-color: white; */
 }
 
 
