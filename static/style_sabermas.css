@@ -1,0 +1,110 @@
+.flip-card {
+	width: 300px;
+	height: 300px;
+	/*background-color: red;*/
+	/*border: 1px solid #f1f1f1;*/
+	perspective: 1000px;
+	justify-self: center;
+	/* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+	border-radius: 1.5em;
+
+}
+
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+	align-content: center;
+}
+
+.flip-card-front img {
+	border-radius: 1em;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-back-text {
+	position: relative;
+	width: 100%;
+	height: 80%;
+	align-content: center;
+	padding: 0.7em;
+}
+
+.flip-card-back-button {
+	position: relative;
+	width: 100%;
+	height: 20%;
+}
+
+.cuadros {
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+	min-height: 100vh;
+	/*align-content: center;*/
+}
+
+.cuadros .col {
+	padding-top: .25rem;
+	/*similar a pt-1*/
+}
+
+.optimen {
+	background-color: #1a1f61;
+}
+
+.swissport {
+	background-color: #940000;
+}
+
+.kaizen {
+	background-color: #224e7b;
+}
+
+.flip-card-back-button a {
+	/*float: left;*/
+	/*display: block;*/
+	color: #c8d6bf;
+	border: 3px inset #c8d6bf;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+
+	.h1,
+	h1 {
+		font-size: 3.5rem;
+	}
+}
