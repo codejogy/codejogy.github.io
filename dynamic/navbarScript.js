@@ -4,13 +4,13 @@ let checkMozilla = navigator.userAgent.includes("Mozilla"); // boolean
 
 // Add navbar
 const nav = document.querySelector(".navbar");
-fetch("../views/navbar.html")
+fetch("/views/navbar.html")
     .then(res => res.text())
     .then(data => { nav.innerHTML = data })
 
 // Add footer
 const foot = document.querySelector(".footer");
-fetch("../views/footer.html")
+fetch("/views/footer.html")
     .then(res => res.text())
     .then(data => { foot.innerHTML = data })
 

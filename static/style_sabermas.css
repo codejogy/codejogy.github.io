@@ -71,8 +71,15 @@
 	/*align-content: center;*/
 }
 
+.slide1_sabermas {
+	background-image: radial-gradient(circle at center, #382222 0%, #0b0b0b 100%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .cuadros .col {
-	padding-top: .25rem;
+	padding-top: .5rem;
 	/*similar a pt-1*/
 }
 
