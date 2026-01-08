@@ -8,11 +8,22 @@ fetch("/views/navbar.html")
     .then(res => res.text())
     .then(data => { nav.innerHTML = data })
 
+// Add head CDN
+const cdn = document.querySelector("head");
+fetch("/views/head.html")
+    .then(res => res.text())
+    .then(data => { cdn.innerHTML += data })
+
 // Add footer
 const foot = document.querySelector(".footer");
 fetch("/views/footer.html")
     .then(res => res.text())
-    .then(data => { foot.innerHTML = data })
+    .then(data => {
+        foot.innerHTML = data;
+        // Add date to footer
+        document.getElementById("year").textContent = new Date().getFullYear()
+    })
+
 
 // If using mozilla
 if (checkMozilla) {
