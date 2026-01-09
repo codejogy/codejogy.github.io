@@ -15,7 +15,7 @@
     <!--auto refresh cada 5 segundos-->
 </head>
 
-<body>
+<body class="baseIntersection">
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm fixed-top">
@@ -31,51 +31,68 @@
             </div>
             <hr>
             <!--texto-->
-            <div>
+            <div class="">
                 <!--<p>Claim (afirmación): la idea central que se defiende.</p>-->
-                <h3 style="font-weight: bold;">Durante mi estancia en Optimen, colaboré en el desarrollo de la
+                <h3 style="font-weight: bold; color:#a8ccff;">Durante mi estancia en Optimen, colaboré en el
+                    desarrollo de la
                     estructura del capital intelectual de las aeronaves de Horizontec, con el objetivo de asegurar
                     inversión para la empresa en 2026.</h3>
                 <br>
 
                 <!--<p>Grounds / Data (evidencia): hechos, datos o referencias que sostienen la afirmación.</p>-->
-                <div>
-                    A continuación comento los distintos logros obtenidos en Optimen. <br> <br>
+                A continuación comento los distintos logros obtenidos en Optimen. <br> <br>
+                <ul class="slideAnimation">
+                    <div>
+                        <li><span style="font-weight: bold;">Estructuración del Plan de Negocios (Business Plan):</span>
+                            Apoyé en la integración y redacción del documento maestro de negocios (Business Plan),
+                            contribuyendo
+                            en un 50% del documento en español y en su totalidad (100%) en inglés. El plan abarcó las
+                            estrategias
+                            comercial,
+                            operativa, técnica y financiera, convirtiendo ideas iniciales en un activo tangible y
+                            estructurado,
+                            apto para su presentación ante fondos de inversión.</li>
+                    </div>
+                    <br>
 
-                    <span style="font-weight: bold;">Estructuración del Plan de Negocios (Business Plan):</span>
-                    Apoyé en la integración y redacción del documento maestro de negocios (Business Plan), contribuyendo
-                    en un 50% del documento en español y en su totalidad (100%) en inglés. El plan abarcó las
-                    estrategias
-                    comercial,
-                    operativa, técnica y financiera, convirtiendo ideas iniciales en un activo tangible y estructurado,
-                    apto para su presentación ante fondos de inversión.
-                </div>
-                <br>
+                    <div>
+                        <li><span style="font-weight: bold;">Generación de Inteligencia de Mercado (Capital
+                                Relacional):</span>
+                            Evalué la oportunidad de negocio en México, Latinoamérica y Estados Unidos mediante la
+                            obtención
+                            de
+                            parámetros TAM, SAM y SOM. Elaboré un análisis del mercado aeronáutico LSA y desarrollé un
+                            Blue
+                            Ocean Strategy Canvas, además de realizar un benchmark técnico-comercial de competidores en
+                            aeronaves LSA. Toda esta información resultó fundamental para demostrar la viabilidad y
+                            rentabilidad
+                            del proyecto ante inversionistas y terceros interesados.</li>
+                    </div>
+                    <br>
 
-                <div><span style="font-weight: bold;">Generación de Inteligencia de Mercado (Capital Relacional):</span>
-                    Evalué la oportunidad de negocio en México, Latinoamérica y Estados Unidos mediante la obtención de
-                    parámetros TAM, SAM y SOM. Elaboré un análisis del mercado aeronáutico LSA y desarrollé un Blue
-                    Ocean Strategy Canvas, además de realizar un benchmark técnico-comercial de competidores en
-                    aeronaves LSA. Toda esta información resultó fundamental para demostrar la viabilidad y rentabilidad
-                    del proyecto ante inversionistas y terceros interesados.
-                </div>
-                <br>
+                    <div>
+                        <li><span style="font-weight: bold;">Formalización del Know-How Operativo (Capital
+                                Estructural):</span>
+                            Documenté y digitalicé los procesos de
+                            manufactura y gestión de inventarios utilizando la herramienta Bizagi, convirtiendo el
+                            conocimiento
+                            de la planta en manuales y diagramas de flujo BPMN, reduciendo el riesgo operativo
+                            percibido por los inversionistas.</li>
+                    </div>
+                    <br>
 
-                <div><span style="font-weight: bold;">Formalización del Know-How Operativo (Capital Estructural):</span>
-                    Documenté y digitalicé los procesos de
-                    manufactura y gestión de inventarios utilizando la herramienta Bizagi, convirtiendo el conocimiento
-                    de la planta en manuales y diagramas de flujo BPMN, reduciendo el riesgo operativo
-                    percibido por los inversionistas.</div>
-                <br>
-
-                <div><span style="font-weight: bold;">Desarrollo de Estrategia de Diferenciación:</span> Apliqué la
-                    metodología de "Océano Azul" para definir la
-                    propuesta de valor única del Halcón 2.1, creando los Pitch Decks y Resúmenes Ejecutivos utilizados
-                    directamente en las rondas de negociación.</div>
-
-                <hr>
+                    <div>
+                        <li><span style="font-weight: bold;">Desarrollo de Estrategia de Diferenciación:</span> Apliqué
+                            la
+                            metodología de "Océano Azul" para definir la
+                            propuesta de valor única del Halcón 2.1, creando los Pitch Decks y Resúmenes Ejecutivos
+                            utilizados
+                            directamente en las rondas de negociación.</li>
+                    </div>
+                </ul>
                 <!--<p>Warrant (justificación): la conexión lógica que explica por qué la evidencia apoya la afirmación.</p>-->
-                <div>
+                <!--Generar un Intersection observer aquí para que aparezca el texto en cuanto sea visible esta parte-->
+                <div class="intersection">
                     Mi intervención fue decisiva porque apoyé en la transformación de <b>la operación técnica diaria en
                         un activo de
                         negocio
@@ -89,15 +106,15 @@
                     proyecto superara con éxito la auditoría de inversión.
                 </div>
 
-                <div style="text-align: center;" class="mt-3 mb-3">
+                <div style="text-align: center;" class="mt-3 mb-3 opacityChange">
                     <img class="img-fluid-half round" src="/static/sabermas/1-2OptimenHorizontecLSA.jpg" alt="">
                 </div>
 
                 <!--<p>Backing (respaldo): evidencia adicional que fortalece el warrant cuando es necesario.</p>-->
                 <div>
-                    En la industria aeroespacial esto es crítico: <b>sin procesos documentados no hay certificación, y
+                    En la industria aeroespacial esto es crítico: <b>sin procesos documentados no hay estructura, y
                         sin
-                        certificación no hay ventas</b>, por lo que documentar era el único camino para asegurar que su
+                        estructura no hay ventas</b>, por lo que documentar era el único camino para asegurar que su
                     dinero
                     <!--<p>Qualifier (matización): la intensidad o alcance de la afirmación (por ejemplo, “probablemente”, “en-->
                     estaría en un proyecto viable. Entonces, aunque no participé en la firma del contrato, mi trabajo
@@ -110,14 +127,14 @@
                 <div>
                     Es posible que la empresa hubiera conseguido la inversión eventualmente contratando consultores
                     externos. No obstante, al realizarlo in-house durante mi estancia, se logró agilizar el proceso de
-                    Due Diligence a una fracción del costo y con un entendimiento técnico del producto que un consultor
+                    investigación exhaustiva a una fracción del costo y con un entendimiento técnico del producto que un
+                    consultor
                     externo habría tardado meses en adquirir.
                 </div>
 
-                <hr>
 
                 <div style="text-align: center;" class="mt-3 mb-3">
-                    <img class="img-fluid-half round" src="/static/sabermas/1-3OptimenEquipo.png" alt="">
+                    <img class="img-fluid-half round scaleChange" src="/static/sabermas/1-3OptimenEquipo.png" alt="">
                 </div>
 
                 <div>
@@ -139,6 +156,8 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="/dynamic/navbarScript.js"></script>
+    <!--<script src="/dynamic/intersection.js"></script>-->
+    <!--<script src="/dynamic/scrollanimation.js"></script>-->
 
 </body>
 
