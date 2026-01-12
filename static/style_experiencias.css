@@ -65,10 +65,17 @@
 
 @keyframes slideright {
 	0% {
-		transform: translateX(-1rem);
+		opacity: 0%;
+		transform: translateX(-4rem);
 	}
 
 	30% {
+		opacity: 0%;
+		transform: translateX(-1rem);
+	}
+
+	50% {
+		opacity: 100%;
 		transform: translateX(0px);
 	}
 }
@@ -82,7 +89,7 @@
 @keyframes opacityChange {
 	0% {
 		opacity: 0%;
-		transform: translateX(-1rem);
+		transform: translateX(-4rem);
 
 	}
 
@@ -121,7 +128,12 @@
 		/*transform: translateX(-4rem);*/
 	}
 
-	40% {
+	20% {
+		opacity: 0;
+		/*transform: translateX(-4rem);*/
+	}
+
+	25% {
 		opacity: 1;
 		/*transform: translateX(-4rem);*/
 	}
