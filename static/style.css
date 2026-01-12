@@ -272,6 +272,31 @@ a:link {
 	border-radius: 6px;
 	font-size: 15px;
 	color: black;
+	animation-name: opacityAnimation;
+	animation-timeline: view();
+	z-index: 1;
+
+}
+
+@keyframes opacityAnimation {
+	0% {
+		opacity: 0%;
+		/*transform: translateX(-4rem);*/
+		/**/
+	}
+
+	20% {
+		opacity: 0%;
+		/*transform: translateX(-4rem);*/
+		/**/
+
+	}
+
+	40% {
+		opacity: 100%;
+		/*transform: translateX(0px);*/
+		z-index: 2;
+	}
 }
 
 .rightarrow {
