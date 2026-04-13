@@ -1,6 +1,7 @@
 /*Paleta de colores {*/
 /*	#1a1f1e (negro) #6cbdb5 (azul verde) #93ccc6 (azul más azul) #c8d6bf (khaki blanco) #e3dfba (khaki)*/
 /*}*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 img {
 	z-index: 0;
@@ -9,7 +10,7 @@ img {
 body {
 	background-color: #121212;
 	color: #c8d6bf;
-	font-family: Roboto, Verdana, Tahoma, Geneva, sans-serif;
+	font-family: Montserrat, Roboto, Verdana, Tahoma, Geneva, sans-serif;
 }
 
 a:link {
@@ -105,11 +106,16 @@ a:link {
 
 
 .slide1 {
+	display: grid;
 	min-height: 100vh;
 }
 
 .slide2 {
-	min-height: 40vh;
+	display: flex;
+	min-height: 30vh;
+	font-family: Montserrat;
+	line-height: 2.5em;
+	letter-spacing: 1%;
 }
 
 .slide3 {
@@ -119,8 +125,16 @@ a:link {
 }
 
 .footer {
-	min-height: 30vh;
+	/*min-height: 30vh;*/
 	background-color: rgb(33 37 41);
+}
+
+.footer a {
+	color: white;
+}
+
+.footer a:hover {
+	color: #c8d6bf;
 }
 
 
@@ -176,6 +190,8 @@ a:link {
 
 .timeline {
 	position: relative;
+	letter-spacing: 3%;
+	line-height: 1.5em;
 	/*margin: 20px auto;*/
 }
 
@@ -236,7 +252,7 @@ a:link {
 	top: 31px;
 	left: -3rem;
 	z-index: 1;
-	background-color: #bbb;
+	background-color: #93ccc6;
 	border-radius: 50%;
 }
 
@@ -258,6 +274,8 @@ a:link {
 	text-align: center;
 	font-size: 5em;
 	color: black;
+	font-weight: 700;
+	letter-spacing: 6%;
 }
 
 .rightTimeline {
@@ -266,12 +284,12 @@ a:link {
 
 .textboxTimeline {
 	padding: 20px 30px;
-	background-color: #e3dfba;
-	box-shadow: 5px 10px #888888;
+	background-color: #16302B;
+	box-shadow: 5px 10px 5px #888888;
 	position: relative;
 	border-radius: 6px;
 	font-size: 15px;
-	color: black;
+	/*color: black;*/
 	animation-name: opacityAnimation;
 	animation-timeline: view();
 	z-index: 1;
@@ -307,7 +325,7 @@ a:link {
 	z-index: 1;
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-left: 15px solid #e3dfba;
+	border-left: 15px solid #16302B;
 	right: -13px;
 }
 
@@ -319,7 +337,7 @@ a:link {
 	z-index: 1;
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-right: 15px solid #e3dfba;
+	border-right: 15px solid #16302B;
 	left: -13px;
 }
 
@@ -332,6 +350,21 @@ a:link {
 	min-height: 100%;
 	z-index: -1;
 	opacity: 0.4;
+}
+
+.textoEtapas {
+	position: relative;
+	text-align: center;
+	background-color: white;
+	color: black;
+	z-index: 1;
+	letter-spacing: 10%;
+	/*font-weight: 600;*/
+}
+
+.textoEtapas h1 {
+	font-weight: 600;
+	font-variant: all-small-caps;
 }
 
 /* Slide3 de 0px a 768px */
@@ -369,7 +402,7 @@ a:link {
 		z-index: 1;
 		border-top: 15px solid transparent;
 		border-bottom: 15px solid transparent;
-		border-right: 15px solid #e3dfba;
+		border-right: 15px solid #16302B;
 		border-left: 0;
 		left: -13px;
 	}
@@ -407,13 +440,52 @@ a:link {
 	margin: 0px 5px;
 }
 
+.button {
+
+	color: #c8d6bf;
+	border: 3px inset #c8d6bf;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 10px;
+	margin: 0px 5px;
+	background-color: #00000000;
+}
+
+.modal-body .button {
+	background-color: #16302b;
+	margin-top: 15px;
+
+}
+
+.modal-content .button {
+	background-color: #16302b;
+	margin-top: 15px;
+
+}
+
+.textboxTimeline .button {
+	justify-self: anchor-center;
+}
+
+
+.button:link {
+	color: #c8d6bf;
+}
+
+.button:hover {
+	background: #f1f1f1;
+	color: black;
+}
+
 .sabermas {
 	background-image: linear-gradient(90deg, #0e8675, #630e0e);
 	;
 
 }
 
-@media(max-width:720px) {
+@media(max-width:920px) {
 
 	.navbarButtom a {
 		display: block;
@@ -424,6 +496,11 @@ a:link {
 		margin-top: 5.5rem;
 	}
 
+	.button {
+		display: block;
+		margin-bottom: 10px;
+
+	}
 }
 
 .navbarButtom a:hover {
